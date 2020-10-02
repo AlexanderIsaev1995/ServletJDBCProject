@@ -60,14 +60,12 @@ public class JDBC {
     }
 
     public void close() throws SQLException {
-        if (statement != null) {
+        try {
             statement.close();
-        }
-        if (statement != null) {
             preparedStatement.close();
-        }
-        if (statement != null) {
             connection.close();
+        } catch (NullPointerException e){
+            e.printStackTrace();
         }
     }
 }
