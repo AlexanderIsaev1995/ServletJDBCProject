@@ -1,0 +1,52 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <display-name>Archetype Created Web Application</display-name>
+
+    <servlet>
+        <servlet-name>add-friend</servlet-name>
+        <servlet-class>app.servlets.AddFriendServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>add-friend</servlet-name>
+        <url-pattern>/add-friend</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>friend-list</servlet-name>
+        <servlet-class>app.servlets.FriendListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>friend-list</servlet-name>
+        <url-pattern>/friend-list</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>delete-friend</servlet-name>
+        <servlet-class>app.servlets.DeleteFriendServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>delete-friend</servlet-name>
+        <url-pattern>/delete-friend</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>update-friend</servlet-name>
+        <servlet-class>app.servlets.UpdateFriendServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>update-friend</servlet-name>
+        <url-pattern>/update-friend</url-pattern>
+    </servlet-mapping>
+
+</web-app>
