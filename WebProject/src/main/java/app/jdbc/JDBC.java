@@ -9,8 +9,8 @@ import java.util.List;
 public class JDBC {
     private static JDBC instance = new JDBC();
     private static String url = "jdbc:postgresql://localhost:5432/notebook";
-    private static String username = "postgres";
-    private static String password = "The385tOloW";
+    private static String username = "********";
+    private static String password = "***********";
     private Connection connection;
     private PreparedStatement preparedStatement;
     private Statement statement;
